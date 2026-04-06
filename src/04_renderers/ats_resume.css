@@ -1,0 +1,125 @@
+@page {
+  size: A4;
+  margin: 0.55in;
+}
+
+:root {
+  --text: #111827;
+  --muted: #4b5563;
+  --line: #d1d5db;
+  --accent: #0f172a;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
+}
+
+body {
+  font-size: 11pt;
+}
+
+.page {
+  max-width: 8.27in;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.header h1 {
+  margin: 0 0 6px;
+  font-size: 22pt;
+  line-height: 1.15;
+  letter-spacing: 0.2px;
+}
+
+.contact-line {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10pt;
+}
+
+.contact-line span {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.section {
+  margin-bottom: 18px;
+  break-inside: avoid;
+}
+
+.section h2 {
+  margin: 0 0 8px;
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+}
+
+.section h3 {
+  margin: 0 0 6px;
+  font-size: 11pt;
+}
+
+.section p {
+  margin: 0;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+}
+
+.skill-item {
+  border: 1px solid var(--line);
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-size: 10pt;
+}
+
+.role-block {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 6px;
+}
+
+.notes {
+  color: var(--muted);
+}
+
+@media screen {
+  body {
+    background: #f5f7fb;
+    padding: 24px;
+  }
+
+  .page {
+    background: white;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    padding: 0.55in;
+  }
+}
